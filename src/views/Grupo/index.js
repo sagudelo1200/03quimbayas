@@ -97,7 +97,7 @@ const Grupo = () => {
               Grito de grupo
             </h4>
             <audio controls>
-              <source src='#03Quimbayas' type='audio/mpeg' />
+              <source src={require('assets/audio/grito_del_grupo.m4a').default} type='audio/mpeg' />
               Tu navegador no soporta este elemento
             </audio>
           </Col>
