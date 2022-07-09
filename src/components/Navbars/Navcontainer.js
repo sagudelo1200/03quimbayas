@@ -143,7 +143,7 @@ const Navcontainer = ({ collapseOpen, setCollapseOpen, brandColor = 'text-succes
           <NavItem>
             <img alt='...' id='logoscoutsmundial' className='rounded-circle mb-1' src={require('assets/img/logos/scout.png').default} width={50} />
             <UncontrolledTooltip target='logoscoutsmundial'>
-              Scouts Mundial
+              ASC y Organización Mundial del Movimiento Scout
             </UncontrolledTooltip>
           </NavItem>
           <NavItem>
