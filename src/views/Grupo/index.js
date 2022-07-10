@@ -13,7 +13,7 @@ const Grupo = () => {
             <p>
               El Grupo Scout 03 Quimbayas, tiene su sede en el parque de San Pio X en el municipio
               de Itagüí, departamento de Antioquia, y se encuentra adscrito a la Organizacion Mundial del
-              Movimiento Scout <b>OMMS</b> y la Corporacion Scouts de Antioquia <b>CSA</b>.
+              Movimiento Scout <b>OMMS</b>, la Asociación Scouts de Colombia <b>ASC</b> y la Corporacion Scouts de Antioquia <b>CSA</b>.
             </p>
           </Col>
           <Col md='6'>
