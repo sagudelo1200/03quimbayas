@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.b2ef5a58.chunk.css",
-    "main.js": "/static/js/main.7e3b8b20.chunk.js",
-    "main.js.map": "/static/js/main.7e3b8b20.chunk.js.map",
+    "main.js": "/static/js/main.265a7862.chunk.js",
+    "main.js.map": "/static/js/main.265a7862.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b3c56046.js",
     "runtime-main.js.map": "/static/js/runtime-main.b3c56046.js.map",
     "static/css/2.68fdb14c.chunk.css": "/static/css/2.68fdb14c.chunk.css",
-    "static/js/2.91af5aef.chunk.js": "/static/js/2.91af5aef.chunk.js",
-    "static/js/2.91af5aef.chunk.js.map": "/static/js/2.91af5aef.chunk.js.map",
+    "static/js/2.72d4ac45.chunk.js": "/static/js/2.72d4ac45.chunk.js",
+    "static/js/2.72d4ac45.chunk.js.map": "/static/js/2.72d4ac45.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.68fdb14c.chunk.css.map": "/static/css/2.68fdb14c.chunk.css.map",
     "static/css/main.b2ef5a58.chunk.css.map": "/static/css/main.b2ef5a58.chunk.css.map",
-    "static/js/2.91af5aef.chunk.js.LICENSE.txt": "/static/js/2.91af5aef.chunk.js.LICENSE.txt",
-    "static/js/main.7e3b8b20.chunk.js.LICENSE.txt": "/static/js/main.7e3b8b20.chunk.js.LICENSE.txt",
+    "static/js/2.72d4ac45.chunk.js.LICENSE.txt": "/static/js/2.72d4ac45.chunk.js.LICENSE.txt",
+    "static/js/main.265a7862.chunk.js.LICENSE.txt": "/static/js/main.265a7862.chunk.js.LICENSE.txt",
     "static/media/about-us.jpg": "/static/media/about-us.a4c246fa.jpg",
     "static/media/balmain.jpg": "/static/media/balmain.7caf5aff.jpg",
     "static/media/bandera_grupo.jpg": "/static/media/bandera_grupo.3a1a8f83.jpg",
@@ -101,6 +101,7 @@
     "static/media/emily.jpg": "/static/media/emily.a0d6d13a.jpg",
     "static/media/excelenciacsa.png": "/static/media/excelenciacsa.93c99fc0.png",
     "static/media/excelenciagrupo.png": "/static/media/excelenciagrupo.59c1cf59.png",
+    "static/media/facebook-logo.png": "/static/media/facebook-logo.795fce8e.png",
     "static/media/familia.png": "/static/media/familia.1afa00f1.png",
     "static/media/familia.jpg": "/static/media/familia.c7d5c5cc.jpg",
     "static/media/familia_oficial.jpg": "/static/media/familia_oficial.d28e290b.jpg",
@@ -112,6 +113,8 @@
     "static/media/features6.jpg": "/static/media/features6.991af0f8.jpg",
     "static/media/features7.jpg": "/static/media/features7.b26e2bec.jpg",
     "static/media/features8.jpg": "/static/media/features8.8c5333de.jpg",
+    "static/media/gmail-logo.png": "/static/media/gmail-logo.a2f2146f.png",
+    "static/media/grito_del_grupo.m4a": "/static/media/grito_del_grupo.3f05a374.m4a",
     "static/media/gucci.jpg": "/static/media/gucci.6d7b8083.jpg",
     "static/media/harvard.jpg": "/static/media/harvard.b1754ba2.jpg",
     "static/media/header.jpg": "/static/media/header.7a480138.jpg",
@@ -121,6 +124,7 @@
     "static/media/header4.jpg": "/static/media/header4.ea4a4670.jpg",
     "static/media/historia_del_grupo.m4a": "/static/media/historia_del_grupo.6acbc983.m4a",
     "static/media/image_placeholder.jpg": "/static/media/image_placeholder.8b58bc47.jpg",
+    "static/media/instagram-logo.png": "/static/media/instagram-logo.8e408da0.png",
     "static/media/james.jpg": "/static/media/james.2697226e.jpg",
     "static/media/jefatura.jpg": "/static/media/jefatura.ca4b71a6.jpg",
     "static/media/jefatura_oficial.jpg": "/static/media/jefatura_oficial.7a702ead.jpg",
@@ -208,13 +212,14 @@
     "static/media/tropa_oficial.jpg": "/static/media/tropa_oficial.004cb13b.jpg",
     "static/media/usher.jpg": "/static/media/usher.9776f5ad.jpg",
     "static/media/vodafone.jpg": "/static/media/vodafone.d02aad25.jpg",
+    "static/media/whatsapp-logo.png": "/static/media/whatsapp-logo.97b90b6e.png",
     "static/media/wooyoungmi.jpg": "/static/media/wooyoungmi.464d961b.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.b3c56046.js",
     "static/css/2.68fdb14c.chunk.css",
-    "static/js/2.91af5aef.chunk.js",
+    "static/js/2.72d4ac45.chunk.js",
     "static/css/main.b2ef5a58.chunk.css",
-    "static/js/main.7e3b8b20.chunk.js"
+    "static/js/main.265a7862.chunk.js"
   ]
 }
