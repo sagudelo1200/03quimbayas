@@ -135,21 +135,21 @@ const Navcontainer = ({ collapseOpen, setCollapseOpen, brandColor = 'text-succes
             </UncontrolledDropdown>
           )}
           <NavItem>
-            <img alt='...' id='logoexcelenciacsa' className='rounded-circle mb-1' src={require('assets/img/logos/excelenciacsa.png').default} width={50} />
+            <img alt='Excelencia CSA' id='logoexcelenciacsa' className='rounded-circle mb-1' src={require('assets/img/logos/excelenciacsa.png').default} width={50} />
             <UncontrolledTooltip target='logoexcelenciacsa'>
               Grupo Excelencia CSA
             </UncontrolledTooltip>
           </NavItem>
           <NavItem>
-            <img alt='...' id='logoscoutsmundial' className='rounded-circle mb-1' src={require('assets/img/logos/scout.png').default} width={50} />
-            <UncontrolledTooltip target='logoscoutsmundial'>
-              ASC y Organización Mundial del Movimiento Scout
+            <img alt='CSA' id='logocsa' className='mb-1' src={require('assets/img/logos/csa.png').default} height={50} />
+            <UncontrolledTooltip target='logocsa'>
+              Corporación Scout de Antioquia
             </UncontrolledTooltip>
           </NavItem>
           <NavItem>
-            <img alt='...' id='logocsa' className='mb-1' src={require('assets/img/logos/csa.png').default} height={50} />
-            <UncontrolledTooltip target='logocsa'>
-              Corporación Scout de Antioquia
+            <img alt='OMMS' id='logoscoutsmundial' className='rounded-circle mb-1' src={require('assets/img/logos/scout.png').default} width={50} />
+            <UncontrolledTooltip target='logoscoutsmundial'>
+              ASC y Organización Mundial del Movimiento Scout
             </UncontrolledTooltip>
           </NavItem>
         </Nav>
