@@ -123,8 +123,8 @@ const Navcontainer = ({ collapseOpen, setCollapseOpen, brandColor = 'text-succes
               </DropdownToggle>
               <DropdownMenu aria-labelledby='navbarDropdownMenuLink2' right>
                 <DropdownItem active={pathName === 'perfil' ? true : false} to='/perfil' tag={Link}>
-                  <i className='fas fa-cog mr-1'></i>
-                  Configuración
+                  <i className='fas fa-user-gear mr-1'></i>
+                  Perfil
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem onClick={logout}>

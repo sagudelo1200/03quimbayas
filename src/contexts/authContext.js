@@ -1,5 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
-import { auth } from '../firebaseApp'
+import { auth, db } from 'firebaseApp'
+import { doc, getDoc } from 'firebase/firestore'
+
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -13,6 +15,7 @@ import {
 
 const AuthContext = createContext({
   currentUser: null,
+  userData: null,
   signInWithGoogle: null,
   login: null,
   register: null,
@@ -26,14 +29,35 @@ export const useAuth = () => useContext(AuthContext)
 
 export default function AuthContextProvider({ children }) {
   const [currentUser, setCurrentUser] = useState(null)
+  const [userData, setUserData] = useState({})
+
+  const fetchUser = async (user) => {
+    const userRef = doc(db, `users/${user.uid}`)
+    const userDoc = await getDoc(userRef)
+
+    if (!userDoc.exists()) {
+      console.error(`User ${user.uid} not found`)
+      logout()
+      throw new Error(`User ${user.uid} not found`)
+    }
+
+    setUserData(userDoc.data())
+  }
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, user => {
-      setCurrentUser(user ? user : null)
+      if (user) {
+        setCurrentUser(user)
+        fetchUser(user)
+      } else {
+        setCurrentUser(null)
+        setUserData({})
+      }
     })
     return () => {
       unsubscribe()
     }
+    // eslint-disable-next-line
   }, [])
 
   function login(email, password) {
@@ -69,6 +93,7 @@ export default function AuthContextProvider({ children }) {
 
   const value = {
     currentUser,
+    userData,
     signInWithGoogle,
     login,
     register,
