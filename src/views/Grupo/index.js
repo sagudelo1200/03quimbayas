@@ -22,6 +22,31 @@ const Grupo = () => {
               potenciando sus mejores sentimientos según el método iniciado por Lord Baden-Powell.
             </p>
           </Col>
+
+          <Col xs='12' className='mb-5'>
+            <h2 className='title'>Escúchanos</h2>
+            <Row className='justify-content-center align-items-center'>
+              <Col md='6'>
+                <h4 className='text-center'>
+                  Grito de grupo
+                </h4>
+                <audio controls>
+                  <source src={require('assets/audio/grito_del_grupo.m4a').default} type='audio/mpeg' />
+                  Tu navegador no soporta este elemento
+                </audio>
+              </Col>
+              <Col md='6'>
+                <h4 className='text-center'>
+                  Historia del grupo
+                </h4>
+                <audio controls>
+                  <source src={require('assets/audio/historia_del_grupo.m4a').default} type='audio/mpeg' />
+                  Tu navegador no soporta este elemento
+                </audio>
+              </Col>
+            </Row>
+          </Col>
+
           <Col md='6'>
             <Card className='text-center'>
               <CardBody>
@@ -33,7 +58,7 @@ const Grupo = () => {
             </Card>
           </Col>
           <Col md='6'>
-            <Card className='text-center'>
+            <Card className='text-center text-muted'>
               <CardBody>
                 <h3 className='title'>Visión</h3>
                 <CardText>
@@ -87,27 +112,6 @@ const Grupo = () => {
                 </CardText>
               </CardBody>
             </Card>
-          </Col>
-        </Row>
-        <h2 className='title'>Escúchanos</h2>
-        <Row className='justify-content-center align-items-center'>
-          <Col md='6'>
-            <h4 className='text-center'>
-              Grito de grupo
-            </h4>
-            <audio controls>
-              <source src={require('assets/audio/grito_del_grupo.m4a').default} type='audio/mpeg' />
-              Tu navegador no soporta este elemento
-            </audio>
-          </Col>
-          <Col md='6'>
-            <h4 className='text-center'>
-              Historia del grupo
-            </h4>
-            <audio controls>
-              <source src={require('assets/audio/historia_del_grupo.m4a').default} type='audio/mpeg' />
-              Tu navegador no soporta este elemento
-            </audio>
           </Col>
         </Row>
       </Container>
