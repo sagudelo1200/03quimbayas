@@ -16,14 +16,13 @@ import Footer from 'components/Footers/Footer.js'
 function Jefatura() {
   const [loading, setLoading] = useState(true)
   const [nIntegrantes, setIntegrantesN] = useState(loading)
-  const [data, setData] = useState({})
+  // const [data, setData] = useState({})
   const unidad = 'jefatura'
 
   const fetchAllData = async () => {
     setLoading(true)
     const response = await fetchData(unidad)
-    console.log(response)
-    setData(response.data)
+    // setData(response.data)
     setIntegrantesN(response.integrantes)
     setLoading(false)
   }
@@ -41,6 +40,7 @@ function Jefatura() {
       document.body.classList.remove('profile-page')
       document.body.classList.remove('sidebar-collapse')
     }
+    // eslint-disable-next-line
   }, [])
   return (
     <>

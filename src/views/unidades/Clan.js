@@ -13,14 +13,11 @@ import Footer from 'components/Footers/Footer.js'
 function Clan() {
   const [loading, setLoading] = useState(true)
   const [nIntegrantes, setIntegrantesN] = useState(loading)
-  const [data, setData] = useState({})
   const unidad = 'clan'
 
   const fetchAllData = async () => {
     setLoading(true)
     const response = await fetchData(unidad)
-    console.log(response)
-    setData(response.data)
     setIntegrantesN(response.integrantes)
     setLoading(false)
   }
@@ -45,25 +42,51 @@ function Clan() {
       <div className='wrapper'>
         <Header unidad={unidad} nIntegrantes={nIntegrantes} />
         <section>
-        <Container className='text-center'>
-            <h3 className='title my-0'>Jefe</h3>
-            <h4 className='my-0'>{data.jefe}</h4>
-            <h3 className='title my-0'>Subjefes</h3>
-            {data.subjefes?.map((subjefe, index) => (
-              <h4 className='my-0' key={index}>{subjefe}</h4>
-            )) || <h4 className='my-0'>...</h4>}
-            <h3 className='title my-0'>Fondo Romántico</h3>
-            <h4 className='my-0'>{data.fondoRomantico}</h4>
-            <h3 className='title my-0'>Ambiente</h3>
-            <h4 className='my-0'>{data.ambiente}</h4>
-            <h3 className='title my-0'>Lema</h3>
-            <h4 className='my-0'>{data.lema}</h4>
-            <h3 className='title my-0'>Lema de Clan</h3>
-            <h4 className='my-0'>{data.lemaClan}</h4>
-            <h3 className='title my-0'>Edades</h3>
-            <h4 className='my-0'>{data.edades}</h4>
-            <h3 className='title my-0'>Sistema</h3>
-            <h4 className='my-0'>{data.sistema}</h4>
+          <Container className='La Mejor Unidad'>
+            <div className='row justify-content-center'>
+              <div className='col-sm-6'>
+                <table className='table border border-danger'>
+                  <thead>
+                    <tr>
+                      <th scope='col'></th>
+                      <th scope='col'></th>
+                      <th scope='col'></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope='row' className='text-right'>Sistema:</th>
+                      <td colSpan='2'>El Individuo Asociado</td>
+                    </tr>
+                    <tr>
+                      <th scope='row' className='text-right'>Lema:</th>
+                      <td colSpan='2'>Siempre Servir</td>
+                    </tr>
+                    <tr>
+                      <th scope='row' className='text-right'>Edad:</th>
+                      <td colSpan='2'>18 a 22 años</td>
+                    </tr>
+                    <tr>
+                      <th scope='row' className='text-right'>Ambiente:</th>
+                      <td colSpan='2'>El Mundo</td>
+                    </tr>
+                    <tr>
+                      <th scope='row' className='text-right'>Fondo romántico:</th>
+                      <td colSpan='2'>La Libertad</td>
+                    </tr>
+
+                    <tr>
+                      <th scope='row' className='text-right'>Jefe:</th>
+                      <td colSpan='2'>Héctor Gómez Mejia</td>
+                    </tr>
+                    <tr>
+                      <th scope='row' className='text-right'>Subjefe:</th>
+                      <td colSpan='2'>Cristian Zapata</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </Container>
         </section>
       </div>

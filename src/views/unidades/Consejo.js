@@ -22,7 +22,6 @@ function Consejo() {
   const fetchAllData = async () => {
     setLoading(true)
     const response = await fetchData(unidad)
-    console.log(response)
     setData(response.data)
     setIntegrantesN(response.integrantes)
     setLoading(false)
@@ -41,12 +40,13 @@ function Consejo() {
       document.body.classList.remove('profile-page')
       document.body.classList.remove('sidebar-collapse')
     }
+    // eslint-disable-next-line
   }, [])
   return (
     <>
       <ScrollTransparentNavbar />
       <div className='wrapper'>
-      <Header unidad={unidad} nIntegrantes={nIntegrantes} />
+        <Header unidad={unidad} nIntegrantes={nIntegrantes} />
         {/*         <div className='section'>
           <Container>
             <div className='button-container'>

@@ -19,7 +19,6 @@ function Manada() {
   const fetchAllData = async () => {
     setLoading(true)
     const response = await fetchData(unidad)
-    console.log(response)
     setData(response.data)
     setIntegrantesN(response.integrantes)
     setLoading(false)
@@ -38,6 +37,7 @@ function Manada() {
       document.body.classList.remove('profile-page')
       document.body.classList.remove('sidebar-collapse')
     }
+    // eslint-disable-next-line
   }, [])
   return (
     <>
@@ -45,23 +45,63 @@ function Manada() {
       <div className='wrapper'>
         <Header unidad={unidad} nIntegrantes={nIntegrantes} />
         <section>
-          <Container className='text-center'>
-            <h3 className='title my-0'>Jefe</h3>
-            <h4 className='my-0'>{data.jefe}</h4>
-            <h3 className='title my-0'>Subjefes</h3>
-            {data.subjefes?.map((subjefe, index) => (
-              <h4 className='my-0' key={index}>{subjefe}</h4>
-            )) || <h4 className='my-0'>...</h4>}
-            <h3 className='title my-0'>Fondo Romántico</h3>
-            <h4 className='my-0'>{data.fondoRomantico}</h4>
-            <h3 className='title my-0'>Ambiente</h3>
-            <h4 className='my-0'>{data.ambiente}</h4>
-            <h3 className='title my-0'>Lema</h3>
-            <h4 className='my-0'>{data.lema}</h4>
-            <h3 className='title my-0'>Edades</h3>
-            <h4 className='my-0'>{data.edades}</h4>
-            <h3 className='title my-0'>Sistema</h3>
-            <h4 className='my-0'>{data.sistema}</h4>
+          <Container>
+            <div className='row justify-content-center'>
+              <div className='col-sm-6'>
+                <table className='table border border-warning'>
+                  <thead>
+                    <tr>
+                      <th scope='col'></th>
+                      <th scope='col'></th>
+                      <th scope='col'></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope='row' className='text-right'>Sistema:</th>
+                      <td colSpan='2'>La Manada</td>
+                    </tr>
+                    <tr>
+                      <th scope='row' className='text-right'>Lema:</th>
+                      <td colSpan='2'>Siempre Mejor</td>
+                    </tr>
+                    <tr>
+                      <th scope='row' className='text-right'>Edad:</th>
+                      <td colSpan='2'>7 a 11 años</td>
+                    </tr>
+                    <tr>
+                      <th scope='row' className='text-right'>Ambiente:</th>
+                      <td colSpan='2'>La Selva</td>
+                    </tr>
+                    <tr>
+                      <th scope='row' className='text-right'>Fondo romántico:</th>
+                      <td colSpan='2'>Fantasía (Libro de las tierras Vírgenes)</td>
+                    </tr>
+
+                    <tr>
+                      <th scope='row' className='text-right'>Jefe:</th>
+                      <td>María Isabel Roldán Álvarez</td>
+                      <td><b>AKELA</b></td>
+                    </tr>
+                    <tr>
+                      <th scope='row' className='text-right'>Subjefe:</th>
+                      <td>Laura Andrea Ardila Franco</td>
+                      <td><b>BAGUEERA</b></td>
+                    </tr>
+                    <tr className='d-none'>
+                      <th scope='row' className='text-right'>Subjefe:</th>
+                      <td>Santiago Agudelo Gaviria</td>
+                      <td><b>KAA</b></td>
+                    </tr>
+                    <tr>
+                      <th scope='row' className='text-right'>Subjefe:</th>
+                      <td>Diego Armando Muriel Sanmartin</td>
+                      <td><b>BALOO</b></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </Container>
         </section>
       </div>
