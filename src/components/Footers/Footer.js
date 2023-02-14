@@ -84,7 +84,7 @@ const Footer = () => {
           </UncontrolledTooltip>
         </div>
         <div className="map mt-2">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.9215277354163!2d-75.61978792107749!3d6.164968695157984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4683d573855229%3A0xdab9cd6b17bdc8d4!2sDg.%2047%20%2333-3%2C%20Itag%C3%BCi%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1646541297257!5m2!1ses!2sco" width="90%" height="200px" frameBorder="0" style={{ border: 10 }} allowFullScreen></iframe>
+          <iframe title='ubicacion' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.9215277354163!2d-75.61978792107749!3d6.164968695157984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4683d573855229%3A0xdab9cd6b17bdc8d4!2sDg.%2047%20%2333-3%2C%20Itag%C3%BCi%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1646541297257!5m2!1ses!2sco" width="90%" height="200px" frameBorder="0" style={{ border: 10 }} allowFullScreen></iframe>
         </div>
         <div className="copyright text-center">
           <span id='copyright' className='text-dark'>
